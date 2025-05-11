@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ClassTimeTable</string>
+    <string name="ff"><![CDATA[TTSD/IOT&A]]></string>
+
+    <style name="MainViewPart" parent="Theme.ClassTimeTable">
+        <item name="android:windowBackground">@color/back</item>
+        <item name="android:statusBarColor">@color/back</item>
+        <item name="android:navigationBarColor">@color/back</item>
+        <item name="font">@font/wix_font</item>
+        <item name="fontFamily">@font/wix_font</item>
+        <item name="android:font" tools:ignore="NewApi">@font/wix_font</item>
+        <item name="android:fontFamily">@font/wix_font</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="ViewPart">
+        <item name="font">@font/sava_pro</item>
+        <item name="fontFamily">@font/sava_pro</item>
+        <item name="android:font" tools:ignore="NewApi">@font/sava_pro</item>
+        <item name="android:fontFamily">@font/sava_pro</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/curve</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:paddingStart">20sp</item>
+        <item name="android:paddingEnd">30sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="headTextView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:background">@drawable/from_left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="smallerView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:background">@drawable/from_left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

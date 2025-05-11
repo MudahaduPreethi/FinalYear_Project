@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:overScrollMode="never"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner2"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/pop_back"
+            android:padding="10sp"
+            android:popupBackground="@drawable/pop_back"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_marginTop="10sp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2">
+
+            <LinearLayout
+                android:id="@+id/linearLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp"
+                tools:ignore="ScrollViewSize">
+
+                <TextView
+                    android:id="@+id/headContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Head"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Branch:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/curve_line"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner2">
+
+                    <TableRow android:background="@drawable/from_left">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="Hrs" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="1" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="2" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="3" />
+
+                        <TextView style="@style/headTextView" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="4" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="5" />
+
+                        <TextView style="@style/headTextView" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="6" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="7" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:padding="10sp"
+                            android:text="Day/\nTimings" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="9:00-10:00" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="10:00-10:50" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="10:50-11:40" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="11:40-12:30" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="12:30-01:20" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="01:20-02:10" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="02:10-02:20" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="02:20-03:10" />
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="03:10-04:00" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/mon"
+                        android:background="@drawable/from_left">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="MON" />
+
+                        <TextView
+                            android:id="@+id/m1"
+                            style="@style/smallerView"
+                            android:text="TTSD/DL" />
+
+                        <TextView
+                            android:id="@+id/m2"
+                            style="@style/smallerView"
+                            android:text="TTSD/CC" />
+
+                        <TextView
+                            android:id="@+id/m3"
+                            style="@style/smallerView"
+                            android:text="TTSD/WNS" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="L\nu" />
+
+                        <TextView
+                            android:id="@+id/m4"
+                            style="@style/smallerView"
+                            android:text="@string/ff" />
+
+                        <TextView
+                            android:id="@+id/m5"
+                            style="@style/smallerView"
+                            android:text="IOT&amp;A" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="Break" />
+
+                        <TextView
+                            android:id="@+id/m6"
+                            style="@style/smallerView"
+                            android:text="UHV" />
+
+                        <TextView
+                            android:id="@+id/m7"
+                            style="@style/smallerView"
+                            android:text="LAB" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tue"
+                        android:background="@drawable/from_left">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="TUE" />
+
+                        <TextView
+                            android:id="@+id/tu1"
+                            style="@style/smallerView"
+                            android:text="TTSD/DL" />
+
+                        <TextView
+                            android:id="@+id/tu2"
+                            style="@style/smallerView"
+                            android:text="TTSD/CC" />
+
+                        <TextView
+                            android:id="@+id/tu3"
+                            style="@style/smallerView"
+                            android:text="TTSD/WNS" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="n\nc" />
+
+                        <TextView
+                            android:id="@+id/tu4"
+                            style="@style/smallerView"
+                            android:text="@string/ff" />
+
+                        <TextView
+                            android:id="@+id/tu5"
+                            style="@style/smallerView"
+                            android:text="IOT&amp;A" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="Break" />
+
+                        <TextView
+                            android:id="@+id/tu6"
+                            style="@style/smallerView"
+                            android:text="UHV" />
+
+                        <TextView
+                            android:id="@+id/tu7"
+                            style="@style/smallerView"
+                            android:text="LAB" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/wed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/from_left">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="WED" />
+
+                        <TextView
+                            android:id="@+id/wed1"
+                            style="@style/smallerView"
+                            android:text="TTSD/DL" />
+
+                        <TextView
+                            android:id="@+id/wed2"
+                            style="@style/smallerView"
+                            android:text="TTSD/CC" />
+
+                        <TextView
+                            android:id="@+id/wed3"
+                            style="@style/smallerView"
+                            android:text="TTSD/WNS" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="h\nB" />
+
+                        <TextView
+                            android:id="@+id/wed4"
+                            style="@style/smallerView"
+                            android:text="@string/ff" />
+
+                        <TextView
+                            android:id="@+id/wed5"
+                            style="@style/smallerView"
+                            android:text="IOT&amp;A" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:text="Break" />
+
+                        <TextView
+                            android:id="@+id/wed6"
+                            style="@style/smallerView"
+                            android:text="UHV" />
+
+                        <TextView
+                            android:id="@+id/wed7"
+                            style="@style/smallerView"
+                            android:text="SPORTS" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/thu"
+                        android:background="@drawable/from_left">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="THU" />
+
+                        <TextView
+                            android:id="@+id/tha1"
+                            style="@style/smallerView"
+                            android:text="TTSD/DL" />
+
+                        <TextView
+                            android:id="@+id/tha2"
+                            style="@style/smallerView"
+                            android:text="TTSD/CC" />
+
+                        <TextView
+                            android:id="@+id/tha3"
+                            style="@style/smallerView"
+                            android:text="TTSD/WNS" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="R\nE" />
+
+                        <TextView
+                            android:id="@+id/tha4"
+                            style="@style/smallerView"
+                            android:text="@string/ff" />
+
+                        <TextView
+                            android:id="@+id/tha5"
+                            style="@style/smallerView"
+                            android:text="IOT&amp;A" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="Break" />
+
+                        <TextView
+                            android:id="@+id/tha6"
+                            style="@style/smallerView"
+                            android:text="UHV" />
+
+                        <TextView
+                            android:id="@+id/tha7"
+                            style="@style/smallerView"
+                            android:text="LAB" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fri"
+                        android:background="@drawable/from_left">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="FRI" />
+
+                        <TextView
+                            android:id="@+id/fri1"
+                            style="@style/smallerView"
+                            android:text="TTSD/DL" />
+
+                        <TextView
+                            android:id="@+id/fri2"
+                            style="@style/smallerView"
+                            android:text="TTSD/CC" />
+
+                        <TextView
+                            android:id="@+id/fri3"
+                            style="@style/smallerView"
+                            android:text="TTSD/WNS" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="A\nK" />
+
+                        <TextView
+                            android:id="@+id/fri4"
+                            style="@style/smallerView"
+                            android:text="@string/ff" />
+
+                        <TextView
+                            android:id="@+id/fri5"
+                            style="@style/smallerView"
+                            android:text="IOT&amp;A" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="Break" />
+
+                        <TextView
+                            android:id="@+id/fri6"
+                            style="@style/smallerView"
+                            android:text="UHV" />
+
+                        <TextView
+                            android:id="@+id/fri7"
+                            style="@style/smallerView"
+                            android:text="SPORTS" />
+
+                    </TableRow>
+
+                    <TableRow android:id="@+id/sat">
+
+                        <TextView
+                            style="@style/headTextView"
+                            android:text="SAT" />
+
+                        <TextView
+                            android:id="@+id/sat1"
+                            style="@style/smallerView"
+                            android:text="TTSD/DL" />
+
+                        <TextView
+                            android:id="@+id/sat2"
+                            style="@style/smallerView"
+                            android:text="TTSD/CC" />
+
+                        <TextView
+                            android:id="@+id/sat3"
+                            style="@style/smallerView"
+                            android:text="TTSD/WNS" />
+
+                        <TextView
+
+                            style="@style/smallerView"
+                            android:background="@null" />
+
+                        <TextView
+                            android:id="@+id/sat4"
+                            style="@style/smallerView"
+                            android:text="@string/ff" />
+
+                        <TextView
+                            android:id="@+id/sat5"
+                            style="@style/smallerView"
+                            android:text="IOT&amp;A" />
+
+                        <TextView
+                            style="@style/smallerView"
+                            android:background="@null"
+                            android:text="Break" />
+
+                        <TextView
+                            android:id="@+id/sat6"
+                            style="@style/smallerView"
+                            android:text="UHV" />
+
+                        <TextView
+                            android:id="@+id/sat7"
+                            style="@style/smallerView"
+                            android:text="LIBRARY" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/white"
+            android:text="Send"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20sp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLay"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+
+
+</ScrollView>
